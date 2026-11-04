@@ -5,20 +5,19 @@
 #=================================================================
 
 # Ask for User Input
+#Global variables: num1 and num2
 num1 = int(input("Enter first number: "))
 num2 = int(input("Enter second number: "))
-sum = 0
-difference = 0
 
 #Calculate Sum
 def  calculate_sum():
-    global num1, num2, sum
+    # Local variable: sum
     sum = num1 + num2
     print(f"Sum: {sum}")
 
 #Calculate Difference
 def calculate_difference():
-    global num1, num2, difference
+    # Local variable: difference
     difference = num1 - num2
     print(f"Difference: {difference}")
 
